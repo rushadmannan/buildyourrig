@@ -214,9 +214,12 @@ header a:hover{
 .dark{
   padding:15px;
   background:#457371;
-  color:#ffffff;
+  color:black;
   margin-top:10px;
   margin-bottom:10px;
+}
+.dark label{
+  color:white;
 }
 #sidebar{
   width:100%;
