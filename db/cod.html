@@ -1,0 +1,123 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Affordable and professional web design">
+  	  <meta name="keywords" content="gaming, pc build, gaming pc">
+    	<meta name="author" content="Brad Traversy">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <div id="branding">
+            <h1><span class="highlight">BUILD</span></h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../about.html">ABOUT</a></li>
+              <li><a href="../support.html">SUPPORT</a></li>
+              <li><a href="../Admin/index.html">ADMIN</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section id="showcase_1">
+            <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4" >
+            <img src="./img/learn_2.png" height="400" width="400" align="center">
+          </div>
+          <div class="col-sm-8" >
+                <div class="content">
+
+                  <form id="add-cafe-form"></form>
+
+                  <ul id="cafe-list"></ul>
+
+              </div>
+           </div>
+      </div>
+          </section>
+
+        <script>
+            // Initialize Firebase
+            var firebaseConfig = {
+    apiKey: "AIzaSyDU01YPdtJwg5MnREHWuMv5l88Ut05Oapo",
+    authDomain: "newprojectcomment.firebaseapp.com",
+    databaseURL: "https://newprojectcomment.firebaseio.com",
+    projectId: "newprojectcomment",
+    storageBucket: "",
+    messagingSenderId: "75797371305",
+    appId: "1:75797371305:web:3e407c40d5a126563f4cb8"
+  };
+firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true });
+
+
+
+        </script>
+        <section id="footer">
+            <div class="container">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>Quick links</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                    <li><a href="getstarted.html"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Videos</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>PRODUCTS</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Mother Board</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Processor</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Cooling</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Gaming Accessories</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Case</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Power Supply</a></li>
+                    <li><a href=""><i class="fa fa-angle-double-right"></i>Graphic Card</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>Payment</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><a href=""><i class="fa fa-cc-visa"></i></i>MasterCard</a></li>
+                    <li><a href=""><i class="fa fa-cc-paypal"></i>PayPal</a></li>
+                    <li><a href=""><i class="fa fa-cc-amazon-pay"></i>Amazon-pay</a></li>
+                    <li><a href=""><i class="fa fa-cc-amex"></i>American Express</a></li>
+                    <li><a href=""><i class="fa fa-btc"></i>BitCoin :3</a></li>
+                  </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                  <h5>Contacts</h5>
+                  <ul class="list-unstyled quick-links">
+                    <li><a href=""><i class="fa fa-home"></i>Mirpur-12,Dhaka Bangladesh</a></li>
+                    <li><a href=""><i class="fa fa-envelope-open"></i>build_123@hotmail.com</a></li>
+                    <li><a href=""><i class="fa fa-phone"></i>+88-01625-******</a></li>
+                    <li><a href=""><i class="fa fa-fax"></i>+880-900400</a></li>
+
+                  </ul>
+                   <h5 class="list-inline-item"><a href=""><i class="fa fa-facebook"></i> </a><a href=""><i class="fa fa-twitter"></i> </a><a href=""><i class="fa fa-instagram"></i> </a><a href=""><i class="fa fa-google-plus"></i> </a><a href=""><i class="fa fa-envelope"></i> </a></h5>
+                </div>
+              </div>
+                <hr>
+                  <p style="color: cyan;text-align: center;font-size: 12px;">Let's BUILD&copy; 2019</p>
+              </div>
+
+          </section>
+        <script src="cod.js"></script>
+    </body>
+</html>

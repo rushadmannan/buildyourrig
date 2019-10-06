@@ -463,3 +463,10 @@ footer{
   padding-top: 5px;
   padding-bottom:5px;
 }
+.button_2 a{
+  color:white;
+}
+.button_2 a:hover{
+  text-decoration:none;
+  color:black;
+}

@@ -1,0 +1,73 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Affordable and professional web design">
+  	  <meta name="keywords" content="gaming, pc build, gaming pc">
+    	<meta name="author" content="Brad Traversy">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <div id="branding">
+            <h2>BUILD Admin</h2>
+          </div>
+          <nav>
+            <ul>
+               <li><a href="../index.html">HOME</a></li>
+              <li><a href="../Admin/index.html">Comment</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </header>
+          <section id="hudai">
+            <h3>ADD NEW CONFIGURATION</h3>
+          </section>
+          <section>
+          <div class="col-sm-8" >
+                <div class="content" >
+
+                  <form id="add-cafe-form">
+                    <input type="text" name="game" placeholder="game"><br><br>
+                    <input type="text" name="price" placeholder="Price"><br><br>
+                    <input type="text" name="mobo" placeholder="MotherBoard"><br><br>
+                    <input type="text" name="casing" placeholder="Casing"><br><br>
+                    <input type="text" name="ram" placeholder="Ram"><br><br>
+                    <input type="text" name="gpu" placeholder="GPU"><br><br>
+                    <input type="text" name="pro" placeholder="Processor"><br><br>
+                    <button>Add Configuration</button>
+            </form>
+
+              </div>
+           </div>
+          </section>
+
+        <script>
+            // Initialize Firebase
+            var firebaseConfig = {
+    apiKey: "AIzaSyDU01YPdtJwg5MnREHWuMv5l88Ut05Oapo",
+    authDomain: "newprojectcomment.firebaseapp.com",
+    databaseURL: "https://newprojectcomment.firebaseio.com",
+    projectId: "newprojectcomment",
+    storageBucket: "",
+    messagingSenderId: "75797371305",
+    appId: "1:75797371305:web:3e407c40d5a126563f4cb8"
+  };
+firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true });
+
+
+
+        </script>
+        <script src="upload.js"></script>
+    </body>
+</html>

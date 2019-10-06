@@ -16,6 +16,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 <link rel="stylesheet" type="text/css" href="css/supp.css">
 </head>
 <body>
@@ -29,8 +31,8 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="support.html">SUPPORT</a></li>
-            <li><a href="#">CUSTOMER REVIEW</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="./Admin/index.html">ADMIN</a></li>
+            
           </ul>
         </nav>
       </div>
@@ -38,7 +40,7 @@
 
 	<section id="showcase">
       <div class="container">
-        
+
       </div>
     </section>
     <section id="footer1">
@@ -63,6 +65,10 @@
             <li><a href=""><i class="fa fa-circle"></i>Windows automatic upgrades on my BLD gaming PC</a></li>
           </ul>
         </div>
+			</div>
+			</section>
+			<section id="footer1">
+		  <div class="container">
         <div class="col-xs-12 col-sm-6 col-md-6">
           <section id="sidebar">
           <div class="dark">
@@ -70,23 +76,44 @@
             <form class="quote">
   				<div>
   					<label>Name</label><br>
-  					<input type="text" placeholder="Name">
+  					<input type="text" name="name" placeholder="Name">
   					</div>
   					<div>
   					<label>Email</label><br>
-  					<input type="email" placeholder="Emial Address">
+  					<input type="email" name="email" placeholder="Emial Address">
   					</div>
-  					<div>
-  					<label>Message</label><br>
-  					<textarea placeholder="Message"></textarea>
-  					</div>
+						<div>
+						<label>Message</label><br>
+						<input type="text" name="message" placeholder="Message">
+						</div>
   					<button class="button_1" type="submit">Send</button>
 			</form>
+
           </div>
         </section>
+
+
         </div>
-      </div>
-  	</section>
+			</div>
+			</section>
+			<script>
+					// Initialize Firebase
+					var firebaseConfig = {
+	apiKey: "AIzaSyDU01YPdtJwg5MnREHWuMv5l88Ut05Oapo",
+	authDomain: "newprojectcomment.firebaseapp.com",
+	databaseURL: "https://newprojectcomment.firebaseio.com",
+	projectId: "newprojectcomment",
+	storageBucket: "",
+	messagingSenderId: "75797371305",
+	appId: "1:75797371305:web:3e407c40d5a126563f4cb8"
+};
+firebase.initializeApp(firebaseConfig);
+					const db = firebase.firestore();
+					db.settings({ timestampsInSnapshots: true });
+
+
+
+			</script>
 
     <section id="footer">
     <div class="container">
@@ -129,15 +156,16 @@
             <li><a href=""><i class="fa fa-envelope-open"></i>build_123@hotmail.com</a></li>
             <li><a href=""><i class="fa fa-phone"></i>+88-01625-******</a></li>
             <li><a href=""><i class="fa fa-fax"></i>+880-900400</a></li>
-           
+
           </ul>
            <h5 class="list-inline-item"><a href=""><i class="fa fa-facebook"></i> </a><a href=""><i class="fa fa-twitter"></i> </a><a href=""><i class="fa fa-instagram"></i> </a><a href=""><i class="fa fa-google-plus"></i> </a><a href=""><i class="fa fa-envelope"></i> </a></h5>
         </div>
       </div>
         <hr>
           <p style="color: cyan;text-align: center;font-size: 12px;">Let's BUILD&copy; 2019</p>
-      </div>  
-    
+      </div>
+
   </section>
+	<script src="upload_supp.js"></script>
 </body>
 </html>
