@@ -470,3 +470,17 @@ footer{
   text-decoration:none;
   color:black;
 }
+.column a{
+  color:white;
+}
+.column a:hover{
+  color:red;
+  font-size: 20px;
+}
+#myCarousel .centered a{
+  color:white;
+}
+#myCarousel .centered a:hover{
+  color:#457371;
+  text-decoration: none;
+}

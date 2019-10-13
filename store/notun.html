@@ -12,6 +12,8 @@
         <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
         <link rel="stylesheet" href="./css/style.css">
+        <script src="alert_dibe.js"></script>
+
     </head>
     <body>
       <header>
@@ -36,14 +38,67 @@
                 <div class="content" >
 
                   <form id="add-cafe-form">
-                    <input type="text" name="game" placeholder="game"><br><br>
+                    <select name="game">
+                    <option value="">None</option>
+                    <option value="apex">Apex</option>
+                    <option value="battlefield">Battlefield V</option>
+                    <option value="cod">Call Of Duty</option>
+                    <option value="cs">Counter Strike</option>
+                    <option value="divsion2">Division 2</option>
+                    <option value="gtav">Grand Theft Auto V</option>
+                    <option value="pubg">PUBG</option>
+                    <option value="rainbow6">Rainbow SIX Seige</option>
+                    <option value="witcher">Witcher</option>
+                    <option value="fortnite">Fortnite</option>
+                    <option value="dmc5">Devil May Cry 5</option>
+                    <option value="metro">Metro Exodus</option>
+                    </select>
+                    <br><br>
                     <input type="text" name="price" placeholder="Price"><br><br>
-                    <input type="text" name="mobo" placeholder="MotherBoard"><br><br>
-                    <input type="text" name="casing" placeholder="Casing"><br><br>
-                    <input type="text" name="ram" placeholder="Ram"><br><br>
-                    <input type="text" name="gpu" placeholder="GPU"><br><br>
-                    <input type="text" name="pro" placeholder="Processor"><br><br>
-                    <button>Add Configuration</button>
+                    <select name="mobo">
+                    <option value="">MOTHERBOARD</option>
+                    <option value="ASUS Prime Z390-A LGA 1151 (300 Series) Intel Z390 SATA 6Gb/s ATX Intel Motherboard">ASUS Prime Z390-A LGA 1151 (300 Series) Intel Z390 SATA 6Gb/s ATX</option>
+                    <option value="ASUS ROG Strix Z390-E Gaming LGA 1151 (300 Series) Intel Z390 SATA 6Gb/s ATX Intel Motherboard">ASUS ROG Strix Z390-E Gaming LGA 1151 (300 Series) Intel Z390 SATA</option>
+                    <option value="Gigabyte X399 AORUS PRO DDR4 AMD TR4 Socket Motherboard">Gigabyte X399 AORUS PRO DDR4 AMD TR4 Socket Motherboard</option>
+                    <option value="MSI X470 GAMING PRO CARBON DDR4 AMD AM4 Socket Mainboard">MSI X470 GAMING PRO CARBON DDR4 AMD AM4 Socket Mainboard</option>
+
+                    </select>
+                    <br><br>
+                    <select name="casing">
+                    <option value="">CASING</option>
+                    <option value="NZXT H700 Mid-Tower Case with Tempered Glass">NZXT H700 Mid-Tower Case with Tempered Glass</option>
+                    <option value="NZXT H700i Ninja Mid-Tower Case with Tempered Glass">NZXT H700i Ninja Mid-Tower Case with Tempered Glass</option>
+                    <option value="NZXT H700i Mid-Tower Case with Tempered Glass">NZXT H700i Mid-Tower Case with Tempered Glass</option>
+                    <option value="NZXT H500 Overwatch Special Edition Compact ATX Mid-Tower case">NZXT H500 Overwatch Special Edition Compact ATX Mid-Tower case MID</option>
+                  </select>
+                  <br><br>
+                    <select name="ram">
+                    <option value="">RAM</option>
+                    <option value="G.Skill Trident Z Royal 8GB DDR4 4266MHz Silver Heatsink Desktop RAM">G.Skill Trident Z Royal 8GB DDR4 4266MHz Silver Heatsink Desktop RAM</option>
+                    <option value="Corsair Dominator Platinum 16GB DDR4 3200MHz Black-Metal Heatsink Gaming Desktop RAM">Corsair Dominator Platinum 16GB DDR4 3200MHz Black-Metal Heatsink</option>
+                    <option value="Corsair vengence RGB Pro 16GB DDR4 3200MHz Black Heatsink Desktop RAM">Corsair vengence RGB Pro 16GB DDR4 3200MHz Black Heatsink</option>
+                    <option value="G.Skill Trident Z Royal 8GB DDR4 3600MHz Gold Heatsink Desktop RAM">G.Skill Trident Z Royal 8GB DDR4 3600MHz Gold Heatsink Desktop RAM</option>
+                    </select>
+                    <br><br>
+                    <select name="gpu">
+                    <option value="">GRAPHIC CARD</option>
+                    <option value="Asus ROG Strix GeForce RTX 2080 OC edition 8GB GDDR6 Graphics Card">Asus ROG Strix GeForce RTX 2080 OC edition 8GB GDDR6 GraphicsCard</option>
+                    <option value="ZOTAC GAMING GeForce RTX 2060 6GB GDDR6 Twin Fan Graphics Card">ZOTAC GAMING GeForce RTX 2060 6GB GDDR6 Twin Fan GraphicsCard</option>
+                    <option value="Sapphire NITRO+ RX 590 8G GDDR5 Graphics Card">Sapphire NITRO+ RX 590 8G GDDR5 Graphics Card</option>
+                    <option value="Sapphire Radeon VII 16GB HBM2 HDMI Triple DP (UEFI) Graphics Card">Sapphire Radeon VII 16GB HBM2 HDMI Triple DP (UEFI) Graphics Card</option>
+                    </select>
+                    <br><br>
+                    <select name="pro">
+                    <option value="">PROCESSOR</option>
+                    <option value="AMD Ryzen 5 2600X Processor Base Frequency 3.6GHz Maximum Turbo Frequency 4.2GHz">AMD Ryzen 5 2600X Base Frequency 3.6GHz maxTurbo Frequency 4.2GHz</option>
+                    <option value="AMD Ryzen 5 3600 Base Frequency 3.6GHz">AMD Ryzen 5 3600 Base Frequency 3.6GHz</option>
+                    <option value="AMD Ryzen 7 3700X Base Frequency  3.6GHz Cores 8 Threads 16">AMD Ryzen 7 3700X Base Frequency  3.6GHz Cores 8 Threads 16</option>
+                    <option value="Intel 9th Generation Core i7-9700 Processor">Intel 9th Generation Core i7-9700 Processor</option>
+                    <option value="Intel 8th Generation Core i7-8700 Processor">Intel 8th Generation Core i7-8700 Processor Base 3.20 GHz turbo 4.60GHz</option>
+                    
+                  </select>
+                  <br><br>
+                    <button onclick="myFunction()">Add Configuration</button>
             </form>
 
               </div>

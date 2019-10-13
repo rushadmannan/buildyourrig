@@ -18,4 +18,9 @@ form.addEventListener('submit', (e) => {
     form.ram.value = '';
     form.gpu.value = '';
     form.pro.value = '';
+
+
+    
+  
+
 });
